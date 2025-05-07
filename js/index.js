@@ -22,3 +22,37 @@ cards.forEach((card) => {
     alert("Essa funcionalidade ainda será implementada.");
   });
 });
+
+// Botão "Voltar ao Topo"
+const backToTopButton = document.getElementById("backToTop");
+
+// Exibe o botão quando o usuário rolar para baixo
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+// Rola para o topo ao clicar no botão
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// Barra de pesquisa
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault(); // Evita o comportamento padrão do formulário
+  alert("Essa funcionalidade ainda será implementada.");
+});
+
+// Botão "Comprar"
+const comprarButtons = document.querySelectorAll(".btn-primary");
+comprarButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert("Adicionado ao carrinho!");
+  });
+});
