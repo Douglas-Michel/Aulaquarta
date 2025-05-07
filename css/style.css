@@ -1,9 +1,8 @@
-/* Ajusta as dimensões das imagens do carrossel */
 .carousel-inner img {
-  width: 760px; /* Define a largura fixa */
-  height: 760px; /* Define a altura fixa */
-  margin: 0 auto; /* Centraliza as imagens horizontalmente */
-  border-radius: 10px; /* Adiciona bordas arredondadas */
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar as imagens */
+  width: 760px; 
+  height: 760px;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
